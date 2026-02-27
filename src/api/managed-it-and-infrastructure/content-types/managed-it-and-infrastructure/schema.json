@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "managed_it_and_infrastructures",
+  "info": {
+    "singularName": "managed-it-and-infrastructure",
+    "pluralName": "managed-it-and-infrastructures",
+    "displayName": "Managed IT & Infrastructure"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid"
+    },
+    "metaTitle": {
+      "type": "string"
+    },
+    "metaDescription": {
+      "type": "text"
+    },
+    "bannerImage": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "bannerTitle": {
+      "type": "string"
+    },
+    "bannerText": {
+      "type": "text"
+    },
+    "content": {
+      "type": "richtext"
+    }
+  }
+}
