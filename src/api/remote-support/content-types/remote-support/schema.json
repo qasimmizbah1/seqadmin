@@ -1,0 +1,46 @@
+{
+  "kind": "singleType",
+  "collectionName": "remote_supports",
+  "info": {
+    "singularName": "remote-support",
+    "pluralName": "remote-supports",
+    "displayName": "Remote Support"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid"
+    },
+    "metaTitle": {
+      "type": "string"
+    },
+    "metaDescription": {
+      "type": "text"
+    },
+    "bannerImage": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "bannerTitle": {
+      "type": "string"
+    },
+    "bannerText": {
+      "type": "text"
+    },
+    "content": {
+      "type": "richtext"
+    }
+  }
+}

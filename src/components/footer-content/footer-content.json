@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_footer_content_footer_contents",
+  "info": {
+    "displayName": "footerContent"
+  },
+  "options": {},
+  "attributes": {
+    "footerLogo": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "footerText": {
+      "type": "text"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+DirectoryIndex disabled
+
+
+RewriteEngine On
+
+# Proxy settings
+RewriteCond %{REQUEST_URI} ^/$
+RewriteRule ^(.*)$ http://localhost:1337/$1 [P,L]
+
+# Enable HTTP/1.1 support
+SetEnv proxy-nokeepalive 1
+SetEnv proxy-sendcl 1
+SetEnv proxy-sendchunked 1
+
+# Proxy Headers
+RequestHeader set X-Forwarded-Proto "https"
+RequestHeader set X-Forwarded-For %{REMOTE_ADDR}s
+RequestHeader set X-Real-IP %{REMOTE_ADDR}s
+RequestHeader set Host %{HTTP_HOST}s
+
+# Connection upgrade for websockets
+RewriteCond %{HTTP:Upgrade} =websocket [NC]
+RewriteRule / http://localhost:1337 [P,L]
+
+# Redirect traffic to your port 1337
+RewriteEngine On
+RewriteBase /
+RewriteRule ^(.*)?$ http://127.0.0.1:1337/$1 [P,L]
