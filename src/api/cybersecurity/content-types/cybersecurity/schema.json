@@ -1,10 +1,11 @@
 {
-  "kind": "singleType",
+  "kind": "collectionType",
   "collectionName": "cybersecurities",
   "info": {
     "singularName": "cybersecurity",
     "pluralName": "cybersecurities",
-    "displayName": "Cybersecurity"
+    "displayName": "Cybersecurity",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -21,23 +22,24 @@
       "type": "string"
     },
     "metaDescription": {
-      "type": "string"
+      "type": "text"
     },
     "bannerImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "bannerTitle": {
       "type": "string"
     },
     "bannerText": {
-      "type": "string"
+      "type": "text"
     },
     "content": {
       "type": "richtext"
